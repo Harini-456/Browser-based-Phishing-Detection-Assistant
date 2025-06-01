@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phishing Detector</title>
+  <style>
+     body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #add8e6; 
+    }
+
+    .container {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    #urlInput {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #scanBtn {
+      background-color: #007bff;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .result-box {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      background: #e0e0e0;
+    }
+
+    .tips {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #555;
+      text-align: left;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Phishing Detector</h2>
+
+    <input type="text" id="urlInput" placeholder="Enter a URL to check">
+
+    <button id="scanBtn">Detect</button>
+
+    <div id="result" class="result-box">Enter a URL and click "Detect"</div>
+
+    <div class="tips">
+      <p><strong>Tips:</strong></p>
+      <ul>
+        <li>Don't enter passwords on unknown sites.</li>
+        <li>Check the domain carefully.</li>
+        <li>Look for HTTPS and a valid certificate.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

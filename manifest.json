@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing Detection Assistant",
+  "version": "1.0",
+  "description": "Checks if a website is malicious using VirusTotal API.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://www.virustotal.com/*"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
